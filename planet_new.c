@@ -102,7 +102,7 @@ void myReshape(int width, int height)//ウィンドウサイズ変更時のコールバック関数
     glLoadIdentity();//行列の初期化
     gluPerspective(60.0, (double)width / (double)height, 0.1, 50.0);//透視投影(視野角、アスペクト比、前方クリップ面、後方クリップ面)
     glMatrixMode(GL_MODELVIEW);//モデルビュー変換行列の設定
-    glLoadIdentity();//行列の初期化
+	glLoadIdentity();//行列の初期化
     gluLookAt(0.0, 15.0, 30.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);//視点の設定(視点の位置、注視点の位置、視界の上方向) x-z平面上から見る
 }
 
